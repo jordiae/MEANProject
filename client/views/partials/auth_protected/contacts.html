@@ -1,0 +1,37 @@
+
+
+<div class="container">
+    <h1>Contacts app</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>         
+          <th>Surname</th>
+          <th>Company</th>
+          <th>Phone</th>
+          <th>Action</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="form-control" ng-model="name"></td>
+          <td><input class="form-control" ng-model="surname"></td>
+          <td><input class="form-control" ng-model="company"></td>
+          <td><input class="form-control" ng-model="phone"></td>
+          <td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
+          <td><button class="btn btn-info" ng-click="updateContact()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="clear()">Clear</button></td>
+        </tr>
+        <tr ng-repeat="contact in contacts">
+          <td>{{contact.name}}</td>
+          <td>{{contact.surname}}</td>
+          <td>{{contact.company}}</td>
+          <td>{{contact.phone}}</td>
+          <td><button class="btn btn-danger" ng-click="removeContact(contact._id)">Remove</button></td>
+          <td><button class="btn btn-warning" ng-click="editContact(contact._id)">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>

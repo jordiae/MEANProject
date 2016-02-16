@@ -1,0 +1,25 @@
+{
+  "name": "Tareas",
+  "authors": [
+    "Jordi Armengol Estapé <me@jordiae.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.4",
+    "angular": "^1.4.9",
+    "angular-ui-router": "ui-router#^0.2.17",
+    "bootstrap": "^3.3.6"
+  }
+}
